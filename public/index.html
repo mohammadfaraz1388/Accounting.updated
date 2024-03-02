@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html class="scroll-smooth" lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="یک دمو از وب سایت اصلی حسابداری">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
+    <link rel="canonical" href="https://Accounting.com/">
+    <link rel="stylesheet" href="../dist/output.css">
+    <link rel="shortcut icon" href="http://example.com/myicon.ico" />
+    <title>وب سایت حسابداری</title>
+</head>
+<body>
+    
+    <!-- Main Box(Div) start here -->
+    <div>
+        <!-- Navbar start here -->
+        <nav class="container p-2 flex justify-between items-center">
+            
+<div class="text-center">
+    <svg id="menu_icon" data-drawer-target="drawer-example" data-drawer-show="drawer-example" aria-controls="drawer-example" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 md:mr-12">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+      </svg>
+ </div>
+ 
+ <div id="drawer-example" class="fixed top-0 left-0 z-40 h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-label">
+    <h5 id="drawer-label" class="inline-flex items-center mb-4 text-base font-semibold text-gray-500 dark:text-gray-400"><svg class="w-4 h-4 me-2.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+     <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+   </svg>منو</h5>
+    <button type="button" data-drawer-hide="drawer-example" aria-controls="drawer-example" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 absolute top-2.5 end-2.5 flex items-center justify-center dark:hover:bg-gray-600 dark:hover:text-white" >
+       <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+       </svg>
+       <span class="sr-only">Close menu</span>
+    </button>
+    <div id="menu" class="dark:text-white">
+        <ul class="flex flex-col gap-y-2">
+            <a href="#Support"><li>پشتیابنی</li></a>
+            <a href="#Application"><li>اپلیکیشن وب سایت</li></a>
+            <a href="#Articles"><li>مقالات</li></a>
+            <a href="#About_us"><li>درباره ما</li></a>
+            <a href="#Register"><li>ثبت نام</li></a>
+            <a href="#Frequently_Asked_Questions"><li>سوالات مداول</li></a>
+            <a href="#User_opinion"><li>نظرات کاربران</li></a>
+        </ul>
+      </div>
+ </div>
+ 
+    <img src="../Assets/Logos/Herman Logo.png" alt="Logo" class="w-28 md:w-36"> 
+    </nav>
+    
+    <!-- Navbara end here -->
+
+    <section class="container">
+        <div class="flex flex-col justify-center items-center">
+            <!-- ### Here is The Slider ### -->     
+<div id="default-carousel" class="relative w-full" data-carousel="slide">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../Assets/Images/Slider_Image_1.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 2 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../Assets/Images/Slider_Image_2.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 3 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../Assets/Images/Slider_Image_3.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+        <!-- Item 4 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <img src="../Assets/Images/Slider_Image_4.jpg" class="absolute block w-full -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2" alt="...">
+        </div>
+    </div>
+    <!-- Slider indicators -->
+    <div class="absolute z-30 flex -translate-x-1/2 bottom-5 left-1/2 space-x-3 rtl:space-x-reverse">
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 4" data-carousel-slide-to="3"></button>
+        <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 5" data-carousel-slide-to="4"></button>
+    </div>
+    <!-- Slider controls -->
+
+            <div class="mt-10 text-3xl font-bold flex flex-col items-center md:justify-center md:flex-row md:gap-x-2">
+                <h6>شرکت حسابداری هه رمان</h6>
+                <h6 class="text-[#f7941d]">
+                    <a href="" class="typewrite" data-period="2000" data-type='[ "بهترین شرکت حسابداری", "همواره در حال آپدیت", "بهترین انتخاب", "برای افردا نو پا" ]'>
+                      <span class="wrap"></span>
+                    </a>
+                </h6>
+            </div>
+
+            <div class="mt-7 container flex flex-col gap-y-4 items-center">
+                <a href="../public/start.html"><button type="button" class="bg-[#f7941d] p-2 w-64 rounded-lg md:transition-all hover:bg-white hover:text-[#f7941d] hover:border-[1px] hover:border-[#f7941d]">رایگان شروع کنید</button></a>
+                <a href="../public/log_in.html"><button type="button" class="bg-white p-2 w-64 rounded-lg border border-[#f7941d] shadow-md shadow-[#f7941d] hover:bg-[#f7941d] hover:text-white md:transition-all">ثبت نام و ورود</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-16 flex flex-col md:flex-row md:gap-x-5 items-center justify-center">
+        <div class="flex flex-col items-center mt-5 bg-gray-100 p-5 w-[100%] md:h-52">
+            <h2 class="mt-3 text-2xl">خدمات حسابداری</h2>
+            <p class="mt-5">توضیحات مختصر</p>
+        </div>
+        <div class="flex flex-col items-center mt-5 bg-gray-100 p-5 w-[100%] md:h-52">
+            <h2 class="mt-3 text-2xl">خدمات مالیاتی</h2>
+            <p class="mt-5">توضیحات مختصر</p>
+        </div>
+        <div class="flex flex-col items-center mt-5 bg-gray-100 p-5 w-[100%] md:h-52">
+            <h2 class="mt-3 text-2xl">خدامت حسابرسی</h2>
+            <p class="mt-5">توضیحات مختصر</p>
+        </div>  
+    </section>
+
+    <section class="mt-16 flex flex-col items-center" id="Support">
+        <div class="flex flex-col items-center w-full h-80 bg-[#00aeef] mt-5">
+            <img src="../Assets/Images/Online_support.svg" alt="Online_support" class="w-48 mt-5">
+            <div class="mt-7 container flex flex-col gap-y-4 items-center">
+                <button type="button" class="bg-[#f7941d] p-2 w-64 rounded-lg md:transition-all hover:bg-white hover:text-[#f7941d] hover:border-[1px] hover:border-[#f7941d]">پشتیبانی متنی</button>
+                <button type="button" class="bg-white p-2 w-64 rounded-lg border border-[#f7941d] shadow-md shadow-[#f7941d] hover:bg-[#f7941d] hover:text-white md:transition-all">پشتیبانی تلفنی</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="container mt-16" id="Application">
+        <div class="flex flex-col items-center">
+            <img src="../Assets/Images/Mobile_app.svg" alt="Mobile_app" class="w-48 mt-5">
+            <h1 class="font-black text-2xl mt-5">دانلود اپلیکیشن وب سایت</h1>
+            <p class="font-medium mt-5">با اپلیکیشن ما هر کجا در هر زمان با ما در ارتباط باشید</p>
+            <button type="button" class="bg-[#00aeef] p-2 w-36 mt-5 rounded-lg md:transition-all hover:bg-white hover:text-[#00aeef] hover:border-[1px] hover:border-[#00aeef]">دانلود اپلیکیشن</button>
+        </div>
+    </section>
+
+    <section class="container mt-16" id="Articles">
+        <div class="flex flex-col items-center">
+            <img src="../Assets/Images/Reading.svg" alt="Reading" class="w-48 mt-5">
+            <h1 class="font-black text-2xl mt-5">مقاله بخوانید...</h1>
+            <p class="font-medium mt-5">با مقاله های ما به روز باشید</p>
+            <button type="button" class="bg-[#00aeef] p-2 w-36 mt-5 rounded-lg md:transition-all hover:bg-white hover:text-[#00aeef] hover:border-[1px] hover:border-[#00aeef]">خواندن مقاله</button>
+        </div>
+    </section>
+
+    <section id="About_us" class="container mt-16 mb-5">
+        <div class="flex flex-col items-center">
+            <img src="../Assets/Images/About_us.svg" alt="About_us" class="w-48 mt-5">
+            <h1 class="font-black text-2xl mt-5">درباره ما</h1>
+            <p class="font-medium mt-5">درباره شرکت حسابداری فلان بخوانید...</p>
+            <button type="button" class="bg-[#f7941d] p-2 w-36 mt-5 rounded-lg md:transition-all hover:bg-white hover:text-[#f7941d] hover:border-[1px] hover:border-[#f7941d]">درباره ما بخوانید</button>
+        </div>
+    </section>
+
+    <section id="Register" class="mt-16 flex flex-col items-center">
+        <div class="flex flex-col items-center w-full h-[480px] bg-[#f7941d] mt-5">
+            <h1 class="font-black text-2xl mt-5">همین حالا ثبت نام کن!</h1>
+            <div class="flex flex-col items-center gap-y-5 mt-5">
+                <div class="flex items-center gap-x-3">
+                <label>نام و نام خانوادگی</label>
+                <input type="text" placeholder="محمد فراز امدادی" class="rounded-lg w-56 p-2 focus:border focus:border-[#f7941d]">
+                </div>
+                <div class="flex items-center gap-x-12">
+                <label>شماره تماس</label>
+                <input dir="ltr" type="number" placeholder="0937***2514" class="rounded-lg w-56 p-2 focus:border focus:border-[#f7941d]">
+                </div>
+                <div class="flex items-center gap-x-20">
+                <label>رمز عبور</label>
+                <input dir="ltr" type="password" placeholder="********" class="rounded-lg w-56 p-2 focus:border focus:border-[#f7941d]">
+                </div>
+                <button type="button" class="bg-[#00aeef] p-2 mt-3 w-52 rounded-lg md:transition-all hover:bg-white hover:text-[#00aeef] hover:border-[1px] hover:border-[#00aeef]">ثبت و تایید نهایی</button>
+            </div>
+            <img src="../Assets/Images/Log_in.svg" alt="Log_in" class="w-48 mt-10">
+        </div>
+    </section>
+
+    <section id="Frequently_Asked_Questions" class="mt-16 md:flex-row flex flex-col items-center container">
+        <div class="flex flex-col items-center">
+            <h1 class="text-[#f7941d] font-black text-3xl mt-5">سوالات متداول</h1>
+        <img src="https://hesabfa.com/img/landing/faq.png" alt="" class="w-72">
+        </div>
+        <div class="md:flex md:flex-col md:mr-64 md:mt-28 md:w-[500px]">
+            <div class="flex flex-col gap-y-5 mt-10">
+                <div id="Question1" class="flex items-center justify-between">
+                    <h1 class="text-base">آیا این وب سایت نسخه آفلاین دارد؟</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                      </svg>                  
+                </div>
+                <div id="Answer1">
+                    <p>خیر، وب سایت ما یک نرم افزار آنلاین حسابداری است با ماهیت ابری، تحت وب و نسخه آفلاینی ندارد.</p>
+                </div>
+                <div id="Question2" class="flex items-center justify-between">
+                    <h1 class="text-base">آیا این وب سایت روی IOS هم کار می کند؟</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                      </svg>                  
+                </div>
+                <div id="Answer2">
+                    <p class="text-justify">حسابفا اپلیکیشنی ویژه ی سیستم عامل های IOS، یا سیستم عامل های MAC ندارد. اما از آنجایی که نرم افزار ابری و تحت وب است، دسترسی به آن از طریق کلیه مرورگرها برای کاربران میسر است. ما کاربران متعددی داریم که بدون هیچ گونه مشکلی، از طریق مرورگر وب بر روی سیستم عامل IOS یا MAC از نرم افزار استفاده می کنند. لازم به ذکر است که این وب سایت بهترین نمایش و کارایی را بر روی مرورگر گوگل کروم دارد، و استفاده از این مرورگر بر روی کلیه سیستم عامل ها توصیه می شود</p>
+                </div>
+                <div id="Question3" class="flex items-center justify-between">
+                    <h1 class="text-base">آیا این وب سایت اپلیکیشن تلفن همراه دارد؟</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                      </svg>                  
+                </div>
+                <div id="Answer3">
+                    <p>بله حسابفا اپلیکیشن اندرویدی دارد و شما می توانید آن را از گوگل پلی دریافت کنید</p>
+                </div>
+                <div id="Question4" class="flex items-center justify-between">
+                    <h1 class="text-base">آیا من می توانم در تاریخ های مورد نظرم، پشتیبان بگیرم؟</h1>
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M19.5 8.25l-7.5 7.5-7.5-7.5" />
+                      </svg>                  
+                </div>
+                <div id="Answer4">
+                    <p>بله، شما می توانید تا ۱۰ مرتبه، از اطلاعات خود در تاریخ های دلخواهتان، نسخه ی پشتیبان تهیه کنید</p>
+                </div>
+            </div>
+            <h5 class="mt-5 text-sm text-blue-500 md:mt-10">اگر جواب سوالتون رو بالا پیدا نکردید اینجا کلیک کنید...</h5>
+        </div>
+    </section>
+
+    <div id="Comment" class="flex items-start gap-2.5 mt-20 container">
+        <img class="w-8 h-8 rounded-full" src="../Assets/Images/user-1.png" alt="Jese image">
+        <div class="flex flex-col gap-1 w-full max-w-[320px]">
+           <div class="flex items-center space-x-2 rtl:space-x-reverse">
+              <span class="text-sm font-semibold text-gray-900 dark:text-white mt-1">علی محمدی</span>
+              <span class="text-sm font-normal text-gray-500 dark:text-gray-400 mt-2">11:46</span>
+           </div>
+           <div class="flex flex-col leading-1.5 p-4 border-gray-200 bg-gray-100 rounded-e-xl rounded-es-xl dark:bg-gray-700">
+              <p class="text-sm font-normal text-gray-900 dark:text-white text-justify">ابتدا با نرم افزار آفلاین کار می‌کردیم ولی اون نرم افزار، پاسخگوی نیازهای ما نبود. بصورت اتفاقی با حسابفا آشنا شدیم و باعث شد که نرم افزار رو به حسابفا تغییر بدیم. </p>
+           </div>
+           <span class="text-sm font-normal text-gray-500 dark:text-gray-400">تحویل داده شده</span>
+        </div>
+        <button id="dropdownMenuIconButton" data-dropdown-toggle="dropdownDots" data-dropdown-placement="bottom-start" class="inline-flex self-center items-center p-2 text-sm font-medium text-center text-gray-900 bg-white rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-900 dark:hover:bg-gray-800 dark:focus:ring-gray-600" type="button">
+           <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 4 15">
+              <path d="M3.5 1.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 6.041a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Zm0 5.959a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0Z"/>
+           </svg>
+        </button>
+        <div id="dropdownDots" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-40 dark:bg-gray-700 dark:divide-gray-600">
+           <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
+              <li>
+                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">دیدن نظرها</a>
+              </li>
+              <li>
+                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">ثبت نظر</a>
+              </li>
+              <li>
+                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">اینستاگرام</a>
+              </li>
+              <li>
+                 <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">تلگرام</a>
+              </li>
+           </ul>
+        </div>
+     </div>
+     
+
+
+    <!-- Clculator start here -->
+
+    <section id="Calculator" class="container mt-28 flex flex-col items-center">
+        <h1 class="font-black text-2xl text-[#00aeef]">حساب و کتاب هات رو انجام بده</h1>
+        <main class="w-full m-5 max-w-md select-none px-4 md:px-0">
+            <div class="flex flex-col items-center gap-3 font-bold">
+                 <!-- Display Screen -->
+            <div class="w-full h-28 sm:h-32 bg-white rounded-lg mt-5 md:mt-0 flex flex-col justify-evenly items-end pr-2">
+                  <div id="previous-operation"></div>
+                  <div id="current-operation"  class=" text-2xl md:text-3xl font-semibold" ></div>
+              </div>
+                         <!-- Keyboard pad container -->
+       <div class="bg-white text-xl w-full p-1 rounded-lg">
+                         <!-- Clear and DEL-->
+         <div class="flex justify-around items-center my-5 [&>*]:px-4 [&>*]:py-1 [&>*]:rounded [&>*:active]:scale-95">
+           <button id="clear" class="text-white bg-red-600">Clear</button>
+           <button id="delete" class="border border-black text-black">DEL</button>
+         </div>
+         <div class="grid grid-cols-12">
+                         <!-- Numeric pad -->
+          <div class="number col-span-9 grid grid-cols-3 gap-2 [&>*:hover]:bg-blue-900 [&>*]:rounded [&>*:hover]:text-white [&>*:active]:scale-90">
+                <button data-number>7</button>
+                <button data-number>8</button>
+                <button data-number>9</button>
+                <button data-number>4</button>
+                <button data-number>5</button>
+                <button data-number>6</button>
+                <button data-number>1</button>
+                <button data-number>2</button>
+                <button data-number>3</button>
+                <button data-number>0</button>
+                <button data-number>00</button>
+                <button data-number>.</button>
+         </div>
+                         <!-- Symbols-->
+         <div class="basic-operations col-span-3 grid grid-cols-2 [&>*]:py-5 [&>*]:px-2.5 [&>*]:sm:px-6 gap-2 [&>*:hover]:bg-blue-900 [&>*]:rounded [&>*:hover]:text-white [&>*:active]:scale-90">
+                         
+                <button data-operation="/">÷</button>
+                <button data-operation="*">x</button>
+                <button data-operation="-">-</button>
+                <button data-operation="+">+</button>
+                <button data-bracket>(</button>
+                <button data-bracket>)</button>
+                <button id="equal" class="col-span-2 bg-[#3651c4] text-white">=</button>
+          </div>
+        </div>
+       </div>
+     </div>
+     </main>
+    </section>
+
+    <!-- Clculator end here -->
+
+
+
+    <footer class="container mt-20 bg-white dark:bg-gray-900">
+        <div class="mx-auto w-full max-w-screen-xl">
+          <div class="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
+            <div>
+                <h2 class="mb-6 text-base font-semibold text-gray-900 uppercase dark:text-white">امکانات و ویژگی ها</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="#Application" class=" hover:underline">دانلود اپلیکیشن</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#Articles" class="hover:underline">خواندن بلاگ</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#Comment" class="hover:underline">خواندن نظر ها</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#Calculator" class="hover:underline">ماشین حساب</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-base font-semibold text-gray-900 uppercase dark:text-white">راهنما</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="#Register" class="hover:underline">ثبت نام</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">ورود</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">درباره ما</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">سوالات متداول</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">بلاگ ها</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">آموزش حسابداری</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">انواع ماشین حساب</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">ارز دیجیتال</a>
+                    </li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">فضای مجازی</h2>
+                <ul class="text-gray-500 dark:text-gray-400 font-medium">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">اینستاگرام</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">تلگرام</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">توییتر</a>
+                    </li>
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline">ایتا</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
+            <span class="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
+                کلیه حقوق مادی و معنوی این وب سایت متعلق شرکت حسابداری هه رمان است. 
+            </span>
+            <div class="flex mt-4 sm:justify-center md:mt-0 space-x-5 rtl:space-x-reverse">
+                <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                      <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 8 19">
+                            <path fill-rule="evenodd" d="M6.135 3H8V0H6.135a4.147 4.147 0 0 0-4.142 4.142V6H0v3h2v9.938h3V9h2.021l.592-3H5V3.591A.6.6 0 0 1 5.592 3h.543Z" clip-rule="evenodd"/>
+                        </svg>
+                      <span class="sr-only">Facebook page</span>
+                  </a>
+                  <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                      <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 21 16">
+                            <path d="M16.942 1.556a16.3 16.3 0 0 0-4.126-1.3 12.04 12.04 0 0 0-.529 1.1 15.175 15.175 0 0 0-4.573 0 11.585 11.585 0 0 0-.535-1.1 16.274 16.274 0 0 0-4.129 1.3A17.392 17.392 0 0 0 .182 13.218a15.785 15.785 0 0 0 4.963 2.521c.41-.564.773-1.16 1.084-1.785a10.63 10.63 0 0 1-1.706-.83c.143-.106.283-.217.418-.33a11.664 11.664 0 0 0 10.118 0c.137.113.277.224.418.33-.544.328-1.116.606-1.71.832a12.52 12.52 0 0 0 1.084 1.785 16.46 16.46 0 0 0 5.064-2.595 17.286 17.286 0 0 0-2.973-11.59ZM6.678 10.813a1.941 1.941 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.919 1.919 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Zm6.644 0a1.94 1.94 0 0 1-1.8-2.045 1.93 1.93 0 0 1 1.8-2.047 1.918 1.918 0 0 1 1.8 2.047 1.93 1.93 0 0 1-1.8 2.045Z"/>
+                        </svg>
+                      <span class="sr-only">Discord community</span>
+                  </a>
+                  <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                      <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 17">
+                        <path fill-rule="evenodd" d="M20 1.892a8.178 8.178 0 0 1-2.355.635 4.074 4.074 0 0 0 1.8-2.235 8.344 8.344 0 0 1-2.605.98A4.13 4.13 0 0 0 13.85 0a4.068 4.068 0 0 0-4.1 4.038 4 4 0 0 0 .105.919A11.705 11.705 0 0 1 1.4.734a4.006 4.006 0 0 0 1.268 5.392 4.165 4.165 0 0 1-1.859-.5v.05A4.057 4.057 0 0 0 4.1 9.635a4.19 4.19 0 0 1-1.856.07 4.108 4.108 0 0 0 3.831 2.807A8.36 8.36 0 0 1 0 14.184 11.732 11.732 0 0 0 6.291 16 11.502 11.502 0 0 0 17.964 4.5c0-.177 0-.35-.012-.523A8.143 8.143 0 0 0 20 1.892Z" clip-rule="evenodd"/>
+                    </svg>
+                      <span class="sr-only">Twitter page</span>
+                  </a>
+                  <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                      <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path fill-rule="evenodd" d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z" clip-rule="evenodd"/>
+                      </svg>
+                      <span class="sr-only">GitHub account</span>
+                  </a>
+                  <a href="#" class="text-gray-400 hover:text-gray-900 dark:hover:text-white">
+                      <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                        <path fill-rule="evenodd" d="M10 0a10 10 0 1 0 10 10A10.009 10.009 0 0 0 10 0Zm6.613 4.614a8.523 8.523 0 0 1 1.93 5.32 20.094 20.094 0 0 0-5.949-.274c-.059-.149-.122-.292-.184-.441a23.879 23.879 0 0 0-.566-1.239 11.41 11.41 0 0 0 4.769-3.366ZM8 1.707a8.821 8.821 0 0 1 2-.238 8.5 8.5 0 0 1 5.664 2.152 9.608 9.608 0 0 1-4.476 3.087A45.758 45.758 0 0 0 8 1.707ZM1.642 8.262a8.57 8.57 0 0 1 4.73-5.981A53.998 53.998 0 0 1 9.54 7.222a32.078 32.078 0 0 1-7.9 1.04h.002Zm2.01 7.46a8.51 8.51 0 0 1-2.2-5.707v-.262a31.64 31.64 0 0 0 8.777-1.219c.243.477.477.964.692 1.449-.114.032-.227.067-.336.1a13.569 13.569 0 0 0-6.942 5.636l.009.003ZM10 18.556a8.508 8.508 0 0 1-5.243-1.8 11.717 11.717 0 0 1 6.7-5.332.509.509 0 0 1 .055-.02 35.65 35.65 0 0 1 1.819 6.476 8.476 8.476 0 0 1-3.331.676Zm4.772-1.462A37.232 37.232 0 0 0 13.113 11a12.513 12.513 0 0 1 5.321.364 8.56 8.56 0 0 1-3.66 5.73h-.002Z" clip-rule="evenodd"/>
+                    </svg>
+                      <span class="sr-only">Dribbble account</span>
+                  </a>
+            </div>
+          </div>
+        </div>
+    </footer>
+    
+
+    <!-- Link of Javascript is here -->
+    <script src="../src/JavaScript.js"></script>
+
+    <!-- link of jQuery is here -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="../src/jQuery.js"></script>
+
+    <!-- Slider link -->
+    <script src="../path/to/flowbite/dist/flowbite.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+
+</body>
+</html>

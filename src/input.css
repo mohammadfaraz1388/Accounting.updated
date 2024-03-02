@@ -1,0 +1,8 @@
+@font-face {
+    font-family: Vazir;
+    src: url(../Assets/Fonts/Vazirmatn-Medium.ttf);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

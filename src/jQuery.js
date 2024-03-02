@@ -1,0 +1,32 @@
+$(document).ready(function(){
+    $("#Answer1").hide();
+    $("#Question1").click(function(){
+        $("#Answer1").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#Answer2").hide();
+    $("#Question2").click(function(){
+        $("#Answer2").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#Answer3").hide();
+    $("#Question3").click(function(){
+        $("#Answer3").slideToggle("slow");
+    });
+});
+$(document).ready(function(){
+    $("#Answer4").hide();
+    $("#Question4").click(function(){
+        $("#Answer4").slideToggle("slow");
+    });
+});
+
+// Menu
+$(document).ready(function(){
+    $("#menu").hide();
+    $("#menu_icon").click(function(){
+        $("#menu").slideDown("slow");
+    });
+});

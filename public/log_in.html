@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../dist/output.css">
+    <title>ثبت نام / ورود</title>
+</head>
+<body>
+
+        <!-- Navbar start here -->
+        <nav class="container p-2 flex justify-between items-center">
+            <div class="flex flex-col">
+              <svg
+                id="menu_icon"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="w-6 h-6"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+              <div id="menu">
+                <ul class="flex flex-col gap-y-2">
+                  <a href="../public/index.html"><li>خانه</li></a>
+                </ul>
+              </div>
+            </div>
+          <a href="../public/index.html">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+            </svg>   
+          </a>   
+          </nav>
+          <!-- Navbara end here -->
+
+          <section class="container mt-10">
+            <div class="flex justify-center">
+                <img src="../Assets/Images/Enter.svg" alt="Enter" class="w-56">
+            </div>
+            <div class="mt-10 flex flex-col gap-y-10">
+                <div class="flex flex-col">
+                    <span>نام :</span>
+                    <input type="text" class="h-10 border-b-2 border-[#607274] mr-10 focus:outline-none" placeholder="محمد فراز">
+                  </div>
+                  <div class="flex flex-col">
+                    <span>شماره تماس:</span>
+                    <input type="number" class="h-10 border-b-2 border-[#607274] mr-10 focus:outline-none" placeholder="0937***2514">
+                  </div>
+                  <div class="flex flex-col">
+                    <span>رمز عبور :</span>
+                    <input type="password" class="h-10 border-b-2 border-[#607274] mr-10 focus:outline-none" placeholder="********">
+                  </div>
+            </div>
+            <div class="mt-10 mb-5 flex justify-center">
+                <button type="button" class="bg-[#00aeef] p-2 w-52 rounded-lg">ورود</button>
+            </div>
+          </section>
+
+        <!-- link of jQuery is here -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+        <script src="../src/jQuery.js"></script>
+</body>
+</html>
